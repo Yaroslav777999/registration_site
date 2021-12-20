@@ -1,0 +1,265 @@
+body {
+  font-family: MyriadBold;
+}
+
+.menu {
+  max-width: 1280px;
+  height: 120px;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  font-size: 20px;
+}
+
+.logo {
+  display: flex;
+}
+
+.block__menu {
+  display: flex;
+}
+
+.menu__item-logo {
+  vertical-align: middle;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  margin-top: 0px;
+  background: #1b559e;
+  height: 120px;
+  width: 110px;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+
+}
+
+
+
+.menu__item-name_company {
+  width: 120px;
+  padding: 10px 0px 0px 10px;
+}
+
+.menu__item-adress {
+  padding: 25px 0px 0px 50px;
+  font-family: MyriadLight;
+}
+
+.menu__item-phone_number {
+  padding: 25px 0px 0px 50px;
+}
+
+.menu__button {
+  margin: 21px 0px 0px 0px;
+  height: 70px;
+  width: 28%;
+  background: #0c3464;
+  color: #ffffff;
+  font-size: 20px;
+  align-items: center;
+}
+
+.registration {
+  margin-top: 0px;
+  background: url(../img/main.jpg) no-repeat rgba(0, 0, 0, 0.6);
+  margin: auto;
+  max-width: 1280px;
+  height: 675px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  color: #fff;
+  /* Цвет текста */
+}
+
+.block_registration {
+  padding-top: 100px;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+
+}
+
+.first_part_block_registration {
+  padding: 0px 0px 0px 50px;
+}
+
+.registration h2 {
+  font-size: 62px;
+  ;
+}
+
+.registration h5 {
+  margin-top: -20px;
+  font-size: 20px;
+  font-family: MyriadLight;
+  display: block;
+}
+
+.registration p:last-child {
+  font-family: MyriadLight;
+}
+
+.registration p {
+  margin-top: -20px;
+  color: #ffffff;
+  font-family: MyriadLight;
+  font-size: 20px;
+}
+
+.registration button {
+  margin-top: 20px;
+}
+
+.main_form {
+  margin: 80px 0px 0px 140px;
+  padding: 50px 0px 0px 20px;
+  width: 300px;
+  height: 335px;
+  background: rgb(20, 20, 19, 0.8);
+  font-family: MyriadBold;
+  font-weight: bold;
+}
+
+.main_form p {
+  font-size: 24px;
+}
+
+.block_organisaton_questions {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
+
+.block_organisaton_questions p {
+  font-size: 22px;
+  padding: 0px 0px 0px 0px;
+
+}
+
+.block_organisaton_questions input[type="radio"] {
+  margin: 10px 0px 0px 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border-color: solid 2px #fff;
+  background: black;
+}
+
+.first_main_form__button {
+  padding-left: 20px;
+  font-size: 20px;
+  border: 1px solid #777;
+  color: gray;
+  width: 250px;
+  height: 50px;
+  background: none;
+  margin: auto;
+}
+
+.second_main_form__button {
+  font-size: 20px;
+  color: #fff;
+  width: 275px;
+  height: 50px;
+  background: #1b559e;
+}
+
+.second_main_form__button:hover {
+  background: #14498d;
+}
+
+.services h3 {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  font-size: 42px;
+}
+
+.services h3:nth-child(1) {
+  margin-top: 100px;
+}
+
+.services h3:nth-child(2) {
+  margin-top: -40px;
+}
+
+@media screen and (max-width: 1169px) {
+  .menu {
+    height: 100px;
+  }
+
+  .menu__item-logo {
+    height: 100px;
+  }
+
+  .menu__item-name_company {
+    font-size: 19px;
+  }
+
+  .menu__item-adress {
+    padding: 12px 0px 0px 30px;
+    font-size: 19px;
+    width: 180px;
+  }
+
+  .menu__item-phone_number {
+    padding-right: 10px;
+    font-size: 19px;
+  }
+}
+
+@media screen and (max-width: 944px) {
+  .menu {
+    height: 100px;
+    display: flex;
+  }
+
+  .menu__item-logo {
+    margin-left: 5px;
+  }
+
+  .menu__item-name_company {
+    padding: 0px 0px 0px 10px;
+    width: 120px;
+    /* text-align: center; */
+  }
+}
+
+@media screen and (max-width: 943px) {
+  .menu__item-adress {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .menu__item-phone_number {
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+  }
+  .block__menu {
+    flex-direction: column;
+    justify-content: space-around;
+   
+  }
+  
+}
+
+
+
+/* псевдо элемент
+.menu__item-adress::before {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 3px;
+ background: darkblue;
+ top: 10px;
+
+} */
